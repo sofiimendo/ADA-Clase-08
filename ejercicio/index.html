@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 42px;
+            color: white;
+        }
+
+        .container {
+            margin-left: 350px;
+            margin-top: 100px;
+            background-color: #e3e3e3;
+            width: 1000px;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .caja1 {
+            background-color: tomato;
+            width: 250px;
+            height: 100px;
+        }
+
+        .caja2 {
+            background-color: aqua;
+            height: 100px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="caja1">1</div>
+        <div class="caja2">2</div>
+        <div class="caja1">3</div>
+    </div>
+</body>
+
+</html>

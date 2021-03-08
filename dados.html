@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #e3e3e3;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dimensiones {
+            width: 100px;
+            height: 100px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .dado3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .dado5 {
+            display: flex;
+            flex-direction:column;
+            justify-content:space-between;
+            margin-left: 25px;
+        }
+
+        .punto {
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        
+        .derecha {
+            align-self: flex-start;
+        }
+
+        
+        .centro {
+            align-self: center;
+        }
+
+        .izquierda{
+            align-self: flex-end;
+        }
+        .derecha1{
+            align-self: flex-start;
+        }
+        .izquierda1{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dado3 dimensiones">
+            <div class="punto derecha"></div>
+            <div class="punto centro"></div>
+            <div class="punto izquierda"></div>
+        </div>
+        <div class="dado5 dimensiones">
+            <div class="punto derecha"></div>
+            <div class="punto centro"></div>
+            <div class="punto izquierda"></div>
+        </div>
+    </div>
+</body>
+
+</html>

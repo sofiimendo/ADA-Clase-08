@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 42px;
+            color: white;
+        }
+
+        .container {
+            margin-left: 350px;
+            margin-top: 100px;
+            background-color: #e3e3e3;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /*
+        anchoTotal = 400px
+        2 cajas * 100px = 200px ocupados por las cajas
+        restante = anchoTotal - ocupados por las cajas
+        restante = 400px      - 200px
+        restante = 200px  => Lo que voy a repartir entre mis GROW
+        --- > Igual
+
+        1 grow > 1grow = 200px
+        4 grow > 200px / 4grow = cada grow = 50px
+
+        caja1 : 100px + 3 grow  (3 * 50 = 150) 
+        caja1 : 100px + 150px  
+        caja1 : 250px
+
+        caja2 : 100px + 1 grow 
+        caja2 : 100px + 50px  
+        caja2 : 150px
+      */
+        .caja1 {
+            background-color: tomato;
+            width: 100px;
+            height: 100px;
+            flex-grow: 3;
+        }
+
+        .caja2 {
+            background-color: darkblue;
+            width: 100px;
+            height: 100px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="caja1">1</div>
+        <div class="caja2">2</div>
+    </div>
+</body>
+
+</html>
